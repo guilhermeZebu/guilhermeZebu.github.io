@@ -1,0 +1,446 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #4D4D4D;
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 70px;
+}
+
+* {
+    max-width: 100%;
+}
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.94);
+}
+
+.navbar-toggle {
+    border: 1px solid #12698E;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #12698E;
+}
+
+.navbar a {
+    color: #4d4d4d;
+    transition: all 0.2s ease;
+    font-size: 16px;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #FFF;
+    opacity: 0.7;
+}
+
+.nav-img {
+    margin-top: -17px;
+}
+
+.main-slide-info {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/home/main-bg.jpg');
+    color: #fff;
+}
+
+section h1 {
+    font-weight: 300;
+    font-size: 50px;
+    padding: 30px 0 30px 0;
+}
+
+section h1 b {
+    font-weight: 400;
+}
+
+.about-us {
+
+    background-color: #dfe6eb;
+}
+
+.ball-img {
+    margin-top: 30px;
+}
+
+.clinic-description {
+    font-size: 20px;
+    padding-bottom: 80px;
+}
+
+.services {
+
+    background-color: #f0efef;
+}
+.service-col {
+
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+.service-col p {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.service-col h2 {
+
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.service-col h3 {
+
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.know-more {
+    font-size: 18px;
+    transition:  all 0.2s ease
+}
+
+.know-more:hover {
+    opacity: 0.7;
+
+}
+
+.know-more a, .know-more a:hover, .know-more a:focus {
+    color: #555;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.know-more .glyphicon {
+
+    margin-left: 15px;
+    color: #18a9fa;
+    cursor: pointer;
+
+}
+.no-padding {
+
+    padding: 0!important;
+}
+.services .row {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.inner-prod {
+    padding: 20px;
+    border: 1px solid #D2CECE;
+}
+
+.professionals {
+    background-color: #dfe6eb;
+}
+
+.prof-content img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.prof-content h2 {
+    font-size: 24px;
+    font-weight: 700;  
+}
+.prof-content p {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.professionals .know-more{
+    font-weight: 700;
+}
+
+.know-col {
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+.footer {
+
+    color: #fff;
+}
+.ft-main {
+
+    background-color: #0ea6fa;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.ft-main p {
+
+    font-size: 18px;
+}
+.contact {
+
+    margin-top: 195px;
+}
+.contact p {
+
+    font-size: 20px;
+}
+.map {
+
+    margin-top: 40px;
+}
+.ft-cpr {
+
+    padding: 15px;
+    background-color: #1f7eb3;
+    font-weight: 300;
+}
+.active {
+
+    font-weight: 700;
+    border-bottom: 3px solid #f8a86f;
+    padding-bottom: 6px!important;
+}
+
+/* Página da equipe */
+
+.main-slide-equipe {
+    background-image: url('../images/equipe/bg-equipe.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 150px;
+}
+.main-slide-equipe h1 {
+    font-size: 55px;
+    font-weight: 300;
+
+}
+.team-member {
+    padding-top: 100px;
+}
+.team-member h2 {
+
+    font-weight: 700;
+}
+.team-member p {
+
+    font-size: 16px;
+}
+.team-member img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.small-team {
+
+    padding-bottom: 100px;
+}
+
+.small-team h2 {
+    font-size: 24px;
+}
+.videos {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.videos .col-md-6 {
+    padding-top: 20px;
+}
+.team-in-media {
+    background-color: #dfe6eb;
+}
+.team-in-media h1 {
+     border-bottom: 1px solid rgba(70, 69, 69, 0.24);
+}
+.prof-main {
+
+    background-color: #f6f2f2;
+}
+.main-slide-equipe .glyphicon{
+    font-size: 25px;    
+}
+
+.main-slide-info h1 {   
+    padding: 30px 0 10px 0;
+}
+.main-slide-info .glyphicon {
+
+    margin-bottom: 35px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+* .row{
+
+    margin: 0;
+} 
+
+.main-slide-info .glyphicon:hover{
+
+    opacity: 0.7;
+}
+.contact-form {
+    padding: 20px 0 100px 0;
+}
+.main-contact {
+
+    background: #1f7eb3;
+    color: #FFF;
+}
+.main-contact h1 {
+
+    padding-top: 0px;
+}
+.main-contact img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.main-contact input{
+    border:0;
+}
+.main-contact, .main-contact label{
+
+    font-weight: 400;
+}
+.main-contact button, .main-contact button:focus, .main-contact button:active{
+    background-color: #0B2D40;
+    border: 0;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease;
+    cursor: pointer
+}
+
+.main-contact button:active {
+    background-color: #165A7F;
+}
+
+#message {
+
+    resize: none;
+}
+
+        
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    cursor: wait;
+    background: rgba(0,0,0,0.5);
+    z-index: 999999;
+    display: none;
+}
+
+.main-slide-halitose {
+
+    background-image: url('../images/halitose/bg-halitose.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 150px;
+}
+
+.main-slide-servicos {
+
+    background-image: url('../images/servicos/bg-servicos.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 150px;
+}
+
+.main-slide-halitose h3, .main-slide-servicos h3{
+
+    font-weight: 300;
+    font-style: italic;
+}
+
+.main-slide-halitose .links, .main-slide-servicos .links {
+    padding-top: 40px;
+    font-size: 19px;
+}
+
+.main-slide-halitose .links a, .main-slide-servicos .links a {
+    text-decoration: none;
+    color: #eee;
+    cursor: pointer;
+}
+.main-slide-halitose .links a span, .main-slide-servicos .links a span {
+
+    transition: all 0.2s ease;
+}
+.main-slide-halitose .links a span:hover, .main-slide-servicos .links a span:hover {
+    opacity: 0.7;
+    border-bottom: 1px solid;
+    padding: 5px;
+}
+
+.prev-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.prevencao {
+    background-color: #f6f2f2;
+    padding: 30px;
+
+}
+
+.tratamento {
+    background-color: #f6f2f2;
+    padding: 30px;
+
+}
+
+.diagnostico {
+    background-color: #dfe6eb;
+    padding: 30px;
+}
+
+.section-clear {
+    background-color: #f6f2f2;   
+}
+.section-dark {
+    background-color: #dfe6eb;   
+}
+
+section .subtitle {
+    font-size: 25px;
+    border-bottom: 3px solid #f8a86f;
+    padding-bottom: 6px!important;
+    padding-top: 10px;
+}
+
+@media(max-width: 768px) {
+
+    .wow {
+        opacity: 1!important;
+    }
+    .text-left,.text-right {
+        text-align: center!important;
+    }
+    .contact {
+        margin-top: 20px;
+    }
+    .wow {
+        opacity: 1!important;
+    }
+    .col-xs-12 {
+        margin: 0!important;
+    }
+    .active {
+
+        border-bottom: none!important;
+    }
+    .main-contact button {
+
+        margin-top: 20px;
+    }
+
+}
