@@ -417,6 +417,12 @@ section .subtitle {
     padding-top: 10px;
 }
 
+.wpp-ico {
+    max-width: 32px;
+    margin-left: -5px;
+    display: inline;
+}
+
 @media(max-width: 768px) {
 
     .wow {
