@@ -337,25 +337,29 @@ section h1 b {
     display: none;
 }
 
+.main-slide-halitose, .main-slide-cursos, .main-slide-servicos {
+
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 150px;
+}
+
 .main-slide-halitose {
 
     background-image: url('../images/halitose/bg-halitose.jpg');
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    padding: 150px;
+}
+
+.main-slide-cursos {
+
+    background-image: url('../images/cursos/bg-cursos.jpg');
 }
 
 .main-slide-servicos {
-
     background-image: url('../images/servicos/bg-servicos.jpg');
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    padding: 150px;
 }
 
-.main-slide-halitose h3, .main-slide-servicos h3{
+.main-slide-halitose h3, .main-slide-servicos h3, .main-slide-cursos h3{
 
     font-weight: 300;
     font-style: italic;
@@ -379,6 +383,65 @@ section h1 b {
     opacity: 0.7;
     border-bottom: 1px solid;
     padding: 5px;
+}
+
+.curso h1 {
+
+    font-size: 30px;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #f8a86f;
+    padding-bottom: 6px!important;
+}
+
+.curso p {
+
+    font-size: 16px;
+}
+
+.curso-photo {
+    background-image: url('../images/cursos/curso-info.jpg');
+    height: 165px;
+    background-size: cover;
+    background-position: 0;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+.curso-photo:hover {
+    background-image: url('../images/cursos/curso-info-hover.jpg');
+
+}
+
+.prog-toggle {
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.prog-toggle:hover {
+    opacity: 0.9;
+}
+
+.curso-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin-top : 60px;
+    transition: all 0.2s ease;
+}
+
+    .curso-link span {
+    display: block;
+    margin-top: 65px;
+    text-align: center;
+    }
+
+.curso-link:hover {
+    text-decoration: underline;
+    font-size: 22px;
+    color: #FFF;
 }
 
 .prev-text {
