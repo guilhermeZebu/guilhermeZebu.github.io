@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Theotonio&Dutra: Mau hálito tem tratamento, fale de perto com segurança</title>
+    <title>A escola que sempre sonhamos</title>
     <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/tdutra.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/laura.js"></script>
     <script>
         wow = new WOW(
                       {
@@ -25,200 +25,74 @@
     </script>
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/animate.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="css/tdutra.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">       
+    <link type="text/css" rel="stylesheet" href="css/laura.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./">
-                    <img class="nav-img" src="images/icon-small.svg" alt="logo theotonio e dutra">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="active" href="./">Home</a>
-                    </li>
-                    <li>
-                        <a href="halitose.html">Halitose</a>
-                    </li>
-                    <li>
-                        <a  href="equipe.html">Nossa equipe</a>
-                    </li>
-                    <li>
-                        <a href="servicos.html">Outros serviços</a>
-                    </li>
-                   <li>
-                        <a href="cursos.html">Cursos</a>
-                    </li>
-                    <li>
-                        <a href="contato.html">Contato</a>
-                    </li>
-
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <section class = "main-slide-info">
-        <div class = "row">
-            <div class = "col-xs-12 col-md-4 col-md-offset-4 ball-img  wow zoomIn" data-wow-duration="1s" >
-                <img class = "img-responsive" src="images/home/ball-logo.png" />        
-            </div>
-            <div class = "col-xs-12 wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s"><h1>fale <b>de perto</b> com <b>segurança</b></h1></div>
-            <div class = "col-xs-12 wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s"><span class = "glyphicon glyphicon-chevron-down"></span></div> 
-        </div>
-    </section>
-
-    <section class = "about-us">
-        <div class = "row">
-            <div class = "col-xs-12 col-md-3 col-md-offset-1 text-left"><h1 class = "wow fadeInLeft" data-wow- offset="100" data-wow-duration="1s">sobre<br><b>nós</b></h1></div>
-            <div class = "col-xs-12 col-md-10 col-md-offset-1 text-left clinic-description">
-                <p class = "wow fadeIn" data-wow-duration="3s" data-wow- offset="100">
-                   Cada vez mais especializada, a <b>Clínica Odontológica Theotonio &amp; Dutra</b> conta com profissionais qualificados para atender as necessidades do nosso cliente em várias áreas da Odontologia, promovendo a reabilitação <b>estética e funcional </b>do sorriso associada a Saúde Integral da cavidade bucal.
-               </p>
-           </div>
-       </div>
-   </section>
-
-   <section class = "services">
-    <div class = "col-xs-12 col-md-3 col-md-offset-1 no-padding text-left"><h1 class=" wow fadeInLeft" data-wow-offset="20" data-wow-duration="1s">nossos<br><b>serviços</b></h1></div>   
-
-    <div class = "row">
-        <div class = "col-xs-12 col-md-12 service-col text-left">
-            <div class = "inner-prod wow fadeIn" data-wow- offset="100">
-                <img class = "img-responsive service-ico" src="images/home/air-ico.svg" />
-                <h2>halitose</h2>
-                <p>A halitose ou mau hálito atinge cerca de 30% da população do Brasil e acomete crianças, jovens, adultos e idosos, de ambos os gêneros e todas as classes sociais. Por se tratar de um sinal e/ou um sintoma de desequilíbrio seja por alterações sistêmicas, locais ou hábitos de vida, torna-se necessário um conhecimento mais abrangente das reais condições do nosso paciente.</p>
-                <span class = "know-more"><a href="halitose.html">Saiba mais</a><span class = "glyphicon glyphicon-play"></span></span>
-            </div>
-        </div>
+  <div class = "video-container">
+    <video id="video-background" preload autoplay muted loop="loop">
+      <source src="images/kid-video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class = "col-xs-12 main-slide-content video-slide-content">
+    <div class = "col-xs-8 col-xs-offset-2">
+      <div class = "wow fadeIn"  data-wow-duration="2s" data-wow-delay = "1s">
+        <h1>A escola que sempre sonhamos</h1>
+      </div>
+      <div class = "wow fadeIn"  data-wow-duration="2s" data-wow-delay = "2s">
+        <h2 class = "text-right">sem imaginar que pudesse existir</h2>
+      </div>
     </div>
-
-    <div class = "row">
-        <div class = "col-xs-12 col-md-4 service-col text-left">
-            <div class = "inner-prod wow fadeIn" data-wow-duration="1s" data-wow- offset="100">
-                <img class = "img-responsive service-ico" src="images/home/tooth-ico.svg" />
-                <h2>periodontia</h2>
-                <p>Destina-se à prevenção e tratamento das doenças que acometem os tecidos de sustentação e proteção dos dentes, além de promover a estética gengival.</p>
-                <span class = "know-more"><a href="servicos.html#periodontia">Saiba mais</a><span class = "glyphicon glyphicon-play"></span></span>
-            </div>
-        </div>
-
-        <div class = "col-xs-12 col-md-4 service-col text-left">
-            <div class = "inner-prod wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" data-wow- offset="100">
-                <img class = "img-responsive service-ico" src="images/home/implanto-ico.svg" />
-                <h2>implantodontia</h2>
-                <p>Destina-se ao tratamento da ausência de dentes parciais ou totais na boca, com reabilitações protéticas suportadas ou retidas por implantes dentários.</p>
-                <span class = "know-more"><a href="servicos.html#implantodontia">Saiba mais</a><span class = "glyphicon glyphicon-play"></span></span>
-            </div>
-        </div>
-
-        <div class = "col-xs-12 col-md-4 service-col text-left">
-            <div class ="inner-prod wow fadeIn" data-wow-duration="1s" data-wow-delay="2s" data-wow- offset="100">
-                <img class = "img-responsive service-ico"  src="images/home/estomato-ico.svg" />
-                <h2>estomatologia</h2>
-                <p>Especialidade que tem como finalidade prevenir, diagnosticar e tratar as doenças que se manifestam na cavidade da boca e regiões adjacentes.</p>
-                <span class = "know-more"><a href="servicos.html#estomatologia">Saiba mais</a><span class = "glyphicon glyphicon-play"></span></span>
-            </div>
-        </div>
+   <div class = "arrow-down wow fadeIn" data-wow-duration="2s" data-wow-delay = "3s">
+    <i class = "material-icons animated infinite pulse">keyboard_arrow_down</i>
     </div>
+  </div>
+<nav id="nav"class="navbar navbar-light col-xs-12 custom-nav">
+  <ul class="nav navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html">Sobre <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="base-nacional.html">A base nacional comum curricular</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Formação de professores</a>
+    </li>
+  </ul>
+</nav>
 
-    <div class = "row">
-        <div class = "col-xs-12 col-md-4 service-col text-left">
-            <div class = "inner-prod wow fadeIn" data-wow-duration="1s" data-wow- offset="100">
-                <img class = "img-responsive service-ico" src="images/home/aest-ico.svg" />
-                <h2>estética</h2>
-                <p>Um novo conceito em estética dental<br>e gengival associando um sorriso<br>harmonioso à sensação de<br>bem estar bucal.</p>
-                <span class = "know-more"><a href="servicos.html#estetica">Saiba mais</a><span class = "glyphicon glyphicon-play"></span></span>
-            </div>
+    <div class = "site-content">
+        <div class = "col-md-3 col-xs-12 hidden-xs wow fadeIn" data-wow-duration="1.5s" data-wow-delay = "0.5s" style="z-index:1000;">
+          <img src = "images/first-bg.png" />
         </div>
+        <div class = "col-xs-12 col-md-8 about-container">
+          <h1 class = "wow fadeIn" data-wow-duration="1.5s" data-wow-delay = "1s">sobre</h1>
+          <div class = "wow fadeIn" data-wow-duration="1.5s" data-wow-delay = "1.5s">
+            <p>Nas escolas em que estudei, o <b>mesmo discurso</b> era proferido aos pais e às crianças na primeira reunião em que todos os agentes da aprendizagem se olhavam nos olhos:
+            <br><br>
+            <span class ="quote">
+              “A função do nosso colégio é formar as crianças e jovens para a vida”
+            </span>
+            <br><br>
+            como se a vida fosse algum <b>ponto distante</b>, bem guardado no futuro das nossas trajetórias. Segundo esse discurso, talvez a vida começasse depois da <b>formatura</b> ou depois da conquista do <b>primeiro emprego</b>. Ao aqui e agora, cabia a expectativa de sermos <b>bem sucedidos</b> quando crescidos.</p>
+            <p>Essa expectativa é o que faz com que as escolas brasileiras <b>ganhem</b> e <b>percam</b> meninos todos os dias. Apesar das estatísticas oficiais anunciarem o aumento no número de vagas e de alunos matriculados, o encantamento com o <b>aprender é</b> algo muito mais <b>subjetivo</b>. Além da própria dinâmica das escolas - seus horários, regras e metodologias -, aquilo que se ensina dentro das quatro paredes da sala de aula <b>nem sempre é</b> o que as crianças e jovens <b>precisam</b> e <b>gostariam</b> de aprender.</p>
+            <p>Para tentar <b>transformar este cenário</b> de descontentamento com a escola tradicional e <b>formar cidadãos </b>plenos, cujas <b>competências técnicas</b> são tão desenvolvidas quanto suas <b>qualidades emocionais, afetivas e criativas</b>, diversas iniciativas privadas e políticas públicas estão sendo desenvolvidas por entusiastas da educação e governantes.</p>
+            <p>A <b>Base Nacional Comum Curricular</b> é uma dessas propostas de mudança que já está em andamento no Brasil e pretende determinar <b>conteúdos mínimos </b>a serem ensinados em todo o país. Dessa forma, os <b>direitos</b> de aprendizagem das crianças seriam<b> emparelhados</b> e as <b>desigualdades</b> educacionais seriam <b>reduzidas</b>. Mas <b>como é possível</b> construir um documento de tamanha magnitude e impacto social quando <b>professores lutam</b> todos os dias por um salário digno? Quando algumas escolas <b>carecem do mínimo </b>de infraestrutura necessária para o <b>convívio saudável e seguro</b> de crianças e educadores?</p>
+            <p>A reportagem a seguir cresceu com a <b>pretensão de se tornar</b> um <b>espaço de debate</b> entre diversos agentes envolvidos com a educação brasileira. Aqui estão reunidos <b>pontos de vista</b> sobre a <b>Base Nacional Curricular</b>, sobre a <b>formação de professores</b> e sobre a <b>escola que queremos oferecer</b> às nossas crianças e jovens. Por fim, fica aqui o convite para a leitura dos textos, vídeos e imagens, pequenas contribuições para que possamos construir juntos escolas fascinantes.</p>
+            <p>Sejam bem vindos!</p>
+            <p class = "signature"><b>Laura Fontana Novo</b></p>
+          </div>
+        </div>
+      </div>
+      <div class = "col-md-12 boy-img hidden-xs wow fadeIn" data-wow-delay = "2s" >
+        <img src = "images/paint-boy.png" class = "img-responsive" />
+      </div>
 
-        <div class = "col-xs-12 col-md-4 service-col text-left">
-            <div class = "inner-prod wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" data-wow- offset="100">
-                <img class = "img-responsive service-ico" src="images/home/cirur-ico.svg" />
-                <h3>cirurgias menores</h3>
-                <p>Intervenção cirúrgica que não necessita de ambiente hospitalar como extração dental simples ou de elementos inclusos e/ou impactados dentre outras.</p>
-                <span class = "know-more"><a href="servicos.html#cirurgia">Saiba mais</a><span class = "glyphicon glyphicon-play"></span></span>
-            </div>
-        </div>
-
-        <div class = "col-xs-12 col-md-4 service-col text-left">
-            <div class ="inner-prod wow fadeIn" data-wow-duration="1s" data-wow-delay="2s" data-wow- offset="100">
-                <img class = "img-responsive service-ico" src="images/home/special-ico.svg" />
-                <h3>pacientes especiais</h3>
-                <p>Tratamento odontológico aos pacientes portadores de alterações crônicas ou transitórias , síndromes, fobias, doenças sistêmicas, gravidez, etc.</p>
-                <span class = "know-more"><a href="servicos.html#especiais">Saiba mais</a><span class = "glyphicon glyphicon-play"></span></span>
-            </div>
-        </div>
-    </div>            
-
-</section>
-
-<section class = "professionals">
-    <div class = "row">
-        <div class = "col-xs-12 col-md-10 col-md-offset-1 text-left">
-            <h1 class = "wow fadeInLeft" data-wow-duration="2s">nossa<br><b>equipe</b></h1> 
-        </div>
-        <div class = "col-xs-12 col-md-4 col-md-offset-2">
-            <div class = "prof-content wow fadeIn" data-wow-duration = "2s" data-wow-offset="50">
-                <img class = "img-responsive" src = "images/home/marignes.jpg" />
-                <h2>DRA. MARIGNÊS DUTRA</h2>
-                <p>Há 30 anos se dedica a reabilitação estética e saúde bucal de maneira científica, técnica e humanista.</p>
-            </div>
-        </div>
-        <div class = "col-xs-12 col-md-4 ">
-            <div class = "prof-content wow fadeIn" data-wow-duration = "2s" data-wow-offset="50" data-wow-delay="0.5s">
-                <img class = "img-responsive" src = "images/home/eduardo.jpg" />
-                <h2>DR. EDUARDO PEDRAZZA</h2>
-                <p>Com 3 especializações e uma vontade enorme de oferecer o melhor, busca excelência em tudo que faz.</p>
-            </div>
-        </div>   
-        <div class = "col-xs-12 col-md-8 col-md-offset-2 text-right know-col wow fadeIn">
-           <span class = "know-more"><a href="equipe.html">Conheça mais</a><span class = "glyphicon glyphicon-play"></span></span>  
-        </div>
     </div>
-</section>
-
-<section class = "footer"> 
-    <div class = "ft-main">
-            <div class = "row">
-                <div class = "col-xs-12 col-md-3 col-md-offset-1 text-left">
-                    <h1 class = "wow fadeIn" data-wow-duration="1s">entre em<br><b>contato</b></h1>
-                    <p class = "wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">Av. Nove de Julho, 394<br>
-                        Sala 63/64<br>
-                        Vila Adyanna<br>
-                        São José dos Campos - SP</p>
-                </div>
-                <div class="col-xs-12 col-md-3 text-left contact wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <p><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;theotonioedutra@gmail.com</p>
-                    <p><span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(12)3922-5363</p>
-                    <p><img src = "images/wpp.png" class = "img-responsive wpp-ico"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(12)99711-8798</p>
-                 </div>
-                 <div class ="hidden-sm hidden-xs col-md-3 col-md-offset-1 map wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.284025927068!2d-45.89626968534655!3d-23.19631755409706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a6d5dffc8bf%3A0xc1f1f65cc7e9a2f9!2sAv.+Nove+de+Julho%2C+394+-+Jardim+Apolo%2C+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP%2C+12243-001!5e0!3m2!1spt-BR!2sbr!4v1457287577096" width="350" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>
-                 </div>
-        </div>
-    </div>
-    <div class = "ft-cpr">
-        <div class = "row">
-            <div class = "col-xs-12 text-center">THEOTONIO & DUTRA © 2015 | TODOS OS DIREITOS RESERVADOS</div>
-        </div>
-    </div>
-</section>
-
 </body>
-
-
-</html>
