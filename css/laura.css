@@ -1,9 +1,11 @@
 body {
-  background: url(../images/patterns/school.png);
   background-attachment: fixed;
   color: #333;
+  overflow-x:hidden;
 }
-
+.bg-body {
+  background: url(../images/patterns/school.png);
+}
 .video-container{
   position: absolute;
   top: 0;
@@ -116,7 +118,7 @@ body {
 }
 
 .site-content h2 {
-    font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Cedarville Cursive', cursive;
   text-align: center;
   margin-left: 10px;
   display: inline-block;
@@ -171,10 +173,6 @@ body {
   z-index: -1;
   margin-top: -150px;
 }
-.site-content.full-page{
-  background: url(../images/patterns/school.png);
-  background-attachment: fixed;
-}
 .sub-container {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin-top: -20px;
@@ -192,4 +190,63 @@ body {
 
 .card-1:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.quote {
+  text-align: center;
+  opacity: 0.7;
+  /* font-family: sans-serif; */
+  padding: 30px;
+  display: inline-block;
+}
+
+.ilustra {
+  background-color: #f9f8f8;
+  background-position: 0 80%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.ilustra-base {
+  background-image: url(../images/ilustra_base.png);
+}
+
+.eye {
+    width: 122%;
+    margin-left: -21%;
+    display: flex;
+}
+
+.eye span {
+    display: flex;
+    padding: 26%;
+    align-self: center;
+    font-size: 35px;
+    line-height: 47px;
+    color: #eee;
+}
+
+.eye-base {
+  background: url(../images/foto_4.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.66);
+}
+
+.sub-container.no-margin {
+  margin-top: 0;
+}
+
+.tl {
+  background-color: #eee;
+}
+
+.tl h2 {
+    margin-left: 15%!important;
+}
+
+.videos {
+      margin: 80px 0;
+}
+
+.end-cont {
+  margin-bottom: 20px;
 }
