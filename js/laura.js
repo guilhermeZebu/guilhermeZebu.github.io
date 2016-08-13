@@ -2,7 +2,7 @@ $(function(){
 
 	$('.video-slide-content').css('height',$(window).height());
 	$('.video-slide-content').css('width',$(window).width());	
-	$('.sub-slide-content,.image-container, .image-container img,.eye').css('height',$(window).height());
+	$('.sub-slide-content,.image-container, .eye').css('height',$(window).height());
 
 	var nav = $("#nav");
 	var offset = nav.offset().top;
