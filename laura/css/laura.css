@@ -1,0 +1,280 @@
+body {
+  background-attachment: fixed;
+  color: #333;
+  overflow-x:hidden;
+}
+.bg-body {
+  background: url(../images/patterns/school.png);
+}
+.video-container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.image-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+
+.video-container video{
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.image-container img {
+  min-width: 100%; 
+  min-height: 100%; 
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-slide-content {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  color: #FFF;
+  flex-direction: row;
+  font-family: Roboto slab;
+}
+
+.main-slide-content h1 {
+  font-weight: 600;
+  font-size: 55px;
+  border-bottom: 5px solid #DA402D;
+  padding-bottom: 15px;
+}
+
+.main-slide-content h2 {
+  font-weight: 300;
+}
+
+.pointer-scroll {
+  padding: 15px;
+  border:1px solid #fff;
+  border-radius: 50%;
+  margin-top: 100px;
+  display: inline-block;
+}
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  cursor: pointer;
+  color: #eee;
+  transition: all 0.3s ease;
+}
+
+.arrow-down:hover {
+  opacity: 0.4;
+
+}
+
+.arrow-down i {
+  font-size: 45px;
+}
+
+
+.site-content {
+  font-family: Alegreya;
+  line-height: 1.35em;
+  font-size: 20px;
+  color: #424242;
+}
+
+.site-content p {
+  margin-top:2rem;
+}
+
+
+.site-content h1 {
+  font-family: 'Cedarville Cursive', cursive;
+  text-align: left;
+  font-size: 80px;
+  margin-left: 10px;
+  display: inline-block;
+  margin-bottom: 35px;
+  border-top: 5px solid #424242;
+  border-bottom: 5px solid #424242;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.site-content h2 {
+  font-family: 'Cedarville Cursive', cursive;
+  text-align: center;
+  margin-left: 10px;
+  display: inline-block;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  border-top: 3px solid #424242;
+  border-bottom: 3px solid #424242;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 55px;
+}
+
+.about-container {
+  background:#f6f1e8;
+  padding: 50px;
+}
+
+.signature {
+  text-align: right;
+  font-size: 25px;
+}
+
+.navbar.custom-nav {
+    border-radius: 0px;
+    min-height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 9999;
+    font-family: Alegreya;
+    transition: all 0.4s ease;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.12);
+
+}
+
+.navbar.custom-nav.fixed-top {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);
+  position: fixed;
+  top: 0;
+  font-size: 14px;
+  min-height: 40px;
+}
+
+.navbar.custom-nav .nav {
+  padding-left: 20px;
+}
+
+.boy-img img {
+  width: 100%;
+}
+
+.boy-img {
+  padding: 0;
+  margin-top: -25px;
+  z-index: -1;
+  margin-top: -150px;
+}
+.sub-container {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-top: -20px;
+  background:#fff;
+  padding: 50px;
+}
+.yt-video {
+  margin: 50px 0px;
+}
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin-top: 35px;
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.quote {
+  text-align: center;
+  opacity: 0.7;
+  /* font-family: sans-serif; */
+  padding: 30px;
+  display: inline-block;
+}
+
+.ilustra {
+  background-color: #f9f8f8;
+  background-position: 0 80%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.ilustra-base {
+  background-image: url(../images/ilustra_base.png);
+}
+
+.ilustra-profs {
+  background-image: url(../images/ilustra_profs.png);
+}
+
+.eye {
+    width: 122%;
+    margin-left: -21%;
+    display: flex;
+}
+
+.eye span {
+    display: flex;
+    align-self: center;
+    font-size: 45px;
+    line-height: 55px;
+    color: #eee;
+    width: 70%;
+    text-align: center;
+    font-kerning: 1em;
+    letter-spacing: 4px;
+    margin-left: 23%;
+}
+
+.eye-base {
+  background: url(../images/foto_4.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.66);
+}
+
+.eye-prof-1 {
+  background: url(../images/foto_14.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.66);
+}
+
+.eye-prof-2 {
+  background: url(../images/foto_5.jpg);
+  box-shadow: inset 0 0 0 999px rgba(0, 0, 0, 0.66);
+}
+
+.sub-container.no-margin {
+  margin-top: 0;
+}
+
+.tl {
+  background-color: #eee;
+}
+
+.tl h2 {
+    margin-left: 15%!important;
+}
+
+.videos {
+      margin: 80px 0;
+}
+
+.end-cont {
+  margin-bottom: 20px;
+}
+
+.info img {
+  max-width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
