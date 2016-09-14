@@ -1,0 +1,15 @@
+.main-content {
+	background: url("../images/logo_opaque.png") no-repeat fixed center center;
+	background-color: #000;
+	z-index: -1;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  justify-content: center;
+}
+
+.services {
+    padding: 20px;
+    margin-top: 80px;
+}

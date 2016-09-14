@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>A escola que sempre sonhamos</title>
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">  
+    <link type="text/css" rel="stylesheet" href="css/laura.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/timeline.css">    
+    <link type="text/css" rel="stylesheet" href="css/dragula.min.css">    
+    <script>
+    $(function(){
+        function addElements(selected,el) {
+          for (i = 0 ; i < 4 ; i ++) {
+            selected[i] += parseInt(el.dataset.pesos.split(",")[i]);
+          }
+        }
+        var drake = dragula([document.getElementById('words'), document.getElementById('school')]);
+        var selected = [0,0,0,0];
+        drake.on("drop", function(el) {
+            if($('#school .word').length < 4) {
+              //do nothing
+            } else {
+              for (var i = 0 ; i < 4 ; i ++) {
+                addElements(selected,$('#school .word')[i]);
+              }
+              console.log(selected);
+              var max = selected[0];
+              var maxIndex = 0;
+              console.log(maxIndex)
+              for (var i = 1; i < selected.length; i++) {
+                  if (selected[i] > max) {
+                      maxIndex = i;
+                      max = selected[i];
+                  }
+              }
+              switch(maxIndex) {
+                case 0 : $("#tradicional").modal(); break;
+                case 1: $("#construtivista").modal(); break;
+                case 2: $("#montessoriana").modal(); break;
+                case 3: $("#waldorf").modal(); break;
+              }
+            }
+          }
+        );
+    });
+    </script>
+</head>
+
+<body>
+<div id="words" class="col-md-6">
+  <div class = "word col-md-4" data-pesos="2,1,-1,-2">
+    Reprovação
+  </div>
+  <div class = "word col-md-4" data-pesos="-1,2,2,1">
+    Busca pela solução de problemas
+  </div>
+  <div class = "word col-md-4" data-pesos="-1,1,2,2">
+    Liberdade individual
+  </div>
+  <div class = "word col-md-4" data-pesos="-1,-1,1,2">
+    Brinquedos manuais
+  </div>
+  <div class = "word col-md-4" data-pesos="1,1,1,2">
+    Desenvolvimento social
+  </div>
+  <div class = "word col-md-4" data-pesos="1,2,1,2">
+    Trabalho em grupo
+  </div>
+  <div class = "word col-md-4" data-pesos="2,1,-1,-2">
+    Professor detentor do conhecimento
+  </div>
+  <div class = "word col-md-4" data-pesos="-1,1,2,1">
+   Projetos multidisciplinares
+  </div>
+  <div class = "word col-md-4" data-pesos="1,1,1,2">
+   Habilidades artísticas
+  </div>
+  <div class = "word col-md-4" data-pesos="-1,-1,2,1">
+   Turmas com idades variadas
+  </div>
+  <div class = "word col-md-4" data-pesos="-1,1,2,2">
+   Respeito ao ritmo de aprendizado de cada aluno
+  </div>
+  <div class = "word col-md-4" data-pesos="2,1,-1,-2">
+   Prova
+  </div>
+  <div class = "word col-md-4" data-pesos="2,1,-1,-2">
+   Dever de casa
+  </div>
+  <div class = "word col-md-4" data-pesos="-1,-1,1,2">
+   Respeito às aptidões
+  </div>
+  <div class = "word col-md-4" data-pesos="-1,1,2,2">
+   Professor como orientador
+  </div>
+  <div class = "word col-md-4" data-pesos="-1,2,2,2">
+   Aluno ativo
+  </div>
+</div>
+<div id = "school" class="col-md-6" style = "margin:50px;height:400px;width:400px;border:1px solid black;padding:20px;">
+
+</div>
+    <script type="text/javascript" src="js/dragula.min.js"></script>
+</body>
+
+<div id="tradicional" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Escola tradicional</h4>
+      </div>
+      <div class="modal-body">
+        <p>O professor é a figura central, que  ensina as matérias e cobra a resposta dos alunos. Os conteúdos trabalhados em sala de aula geralmente são cobrados em avaliações. Essa linha educacional tem grande foco no conteúdo (dever de casa, provas, etc) e privilegia a preparação para o vestibular desde o início do currículo escolar. Seus defensores enfatizam que uma sólida base de informação é fundamental para formar alunos críticos e questionadores.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onClick="history.go(0)">Refazer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="construtivista" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Escola construtivista</h4>
+      </div>
+      <div class="modal-body">
+        <p>Na escola construtivista o saber não é transmitido apenas pelo professor, os estudantes são incentivados a serem independentes e pró-ativos no processo de aprendizagem e também constroem o próprio conhecimento, formulando hipóteses, perguntas e resolvendo problemas.
+        O objetivo do construtivismo é que o aluno adquira autonomia. A ênfase está no aspecto cognitivo.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onClick="history.go(0)">Refazer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="montessoriana" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Escola montessoriana</h4>
+      </div>
+      <div class="modal-body">
+        <p>Essa metodologia, criada pela educadora italiana Maria Montessori, prevê que o aluno utilize o conhecimento que já possui para assimilar novos conceitos. As atividades são sugeridas e orientadas pelo professor, que deixa que a própria criança se corrija para adquirir maior autoconfiança. Os alunos devem cumprir os módulos obrigatórios para avançar os estudos. Esse tipo de escola pode ter provas ou não.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onClick="history.go(0)">Refazer</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<div id="waldorf" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Escola Waldorf</h4>
+      </div>
+      <div class="modal-body">
+        <p>A pedagogia Waldorf prioriza o desenvolvimento físico, social e individual das crianças e estimula as atividades práticas, como marcenaria e culinária. É contra o uso da televisão e de brinquedos industrializados, prefere dar aos alunos pedaços de madeira para que eles os transformem em brinquedos. A trajetória do aluno é composta por ciclos de sete anos, nos quais cada criança tem um tutor. Geralmente as escolas Waldorf não aplicam provas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onClick="history.go(0)">Refazer</button>
+      </div>
+    </div>
+  </div>
+</div>  

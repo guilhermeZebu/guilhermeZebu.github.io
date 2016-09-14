@@ -230,10 +230,12 @@
     font-size: 0.4em;
     padding: 20px;
     letter-spacing: 2px;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.38);
     display: flex;
     align-self: center;
     padding: 50px;
+    line-height: 32px;
+    font-family: Lato, sans-serif;
 }
 
 .service-container {
@@ -279,7 +281,7 @@
 }
 
 .text-content h2 {
-    font-size: 1.1rem;
+    font-size: 0.4em;
     margin-top: 13px;
     transition: all 0.3s ease;
     cursor: pointer;

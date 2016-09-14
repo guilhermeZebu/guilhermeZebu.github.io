@@ -1,0 +1,30 @@
+body, #page{
+	background: #000;
+}
+
+body, html {
+	height: 100%;
+}
+
+.home-subcontent .logo {
+    width: 100%;
+    padding: 20px;
+}
+
+.home-subcontent h1 {
+	color: #eee;
+	font-weight: 300;
+}
+
+.home-subcontent {
+	max-width: 500px;
+	text-align: center;
+	padding: 15px;
+}
+
+.home-content {
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

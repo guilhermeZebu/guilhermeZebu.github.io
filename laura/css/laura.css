@@ -219,6 +219,11 @@ body {
   background-image: url(../images/ilustra_profs.png);
 }
 
+.ilustra-educa {
+  background-image: url(../images/ilustra_educa.png);
+}
+
+
 .eye {
     width: 122%;
     margin-left: -21%;
@@ -277,4 +282,11 @@ body {
   max-width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+.word {
+  padding: 20px;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  cursor: pointer;
 }

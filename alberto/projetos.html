@@ -14,31 +14,19 @@
         <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
         <meta name="author" content="Codrops" />
         <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/home.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/general.css" />
-        <script type="text/javascript"   src="js/wow.min.js"></script>
-        <link type="text/css" rel="stylesheet" href="css/animate.min.css">
-		<script type="text/javascript"   src="js/modernizr.custom.86080.js"></script>
-        <script type="text/javascript"   src="js/jquery-1.12.1.min.js"></script>
-        <script type="text/javascript"   src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<script type="text/javascript" async  src="js/modernizr.custom.86080.js"></script>
+        <script type="text/javascript" async  src="js/jquery-1.12.1.min.js"></script>
+        <script type="text/javascript" async  src="js/bootstrap.min.js"></script>
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
-        <script>
-        wow = new WOW(
-                      {
-                      boxClass:     'wow',       
-                      animateClass: 'animated',  
-                      offset:       0,           
-                      mobile:       false,        
-                      live:         true         
-                    }
-                    )
-                    wow.init();
-        </script>
+        <script src="https://use.fontawesome.com/a826d74946.js"></script>
     </head>
     <body id="page">
 
-      <div class="alberto-nav">
+    <div class="alberto-nav">
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
@@ -53,7 +41,7 @@
           </div>
           <div id="navbar3" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="projetos.html">Projetos</a></li>
+              <li class="active"><a href="projetos.html">Projetos</a></li>
               <li><a href="servicos.html">Serviços</a></li>
               <li><a href="contato.html">Contato</a></li>
             </ul>
@@ -63,12 +51,13 @@
         <!--/.container-fluid -->
       </nav>
     </div>
-
-        <div class = "home-content wow fadeIn" data-wow-duration="4s" data-wow-delay = "0.4s">
-            <div class = "home-subcontent">
-                <img class="img-responsive logo" src="images/logo_final.png" />
-            </div>
-            </div>
-        </div>
+        <ul class="cb-slideshow">
+            <li><span>Image 01</span></li>
+            <li><span>Image 02</span>></li>
+            <li><span>Image 03</span></li>
+            <li><span>Image 04</span></li>
+            <li><span>Image 05</span></li>
+            <li><span>Image 06</span></li>
+        </ul>
     </body>
 </html>
