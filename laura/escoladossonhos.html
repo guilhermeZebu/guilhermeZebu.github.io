@@ -24,6 +24,9 @@
     <link type="text/css" rel="stylesheet" href="css/dragula.min.css">    
     <script>
     $(function(){
+
+          $('.main-container').css('height',$(window).height());
+
         function addElements(selected,el) {
           for (i = 0 ; i < 4 ; i ++) {
             selected[i] += parseInt(el.dataset.pesos.split(",")[i]);
@@ -32,6 +35,8 @@
         var drake = dragula([document.getElementById('words'), document.getElementById('school')]);
         var selected = [0,0,0,0];
         drake.on("drop", function(el) {
+            $("#school .word").removeClass("col-md-6").addClass("col-md-12 selected");
+
             if($('#school .word').length < 4) {
               //do nothing
             } else {
@@ -62,60 +67,65 @@
 </head>
 
 <body>
-<div id="words" class="col-md-6">
-  <div class = "word col-md-4" data-pesos="2,1,-1,-2">
-    Reprovação
+<a href="./" class="back-button">Voltar</a>
+<div class="main-container wow fadeIn" style="overflow-y:hidden;">
+  <div class="site-content" style="text-align: center;padding-top: 20px;">
+    <h1 style="font-size: 50px;">Sua escola dos sonhos</h1>
+    <h3 style="margin-bottom: 40px;">Arraste quatro palavras para a imagem e descubra o seu tipo de escola dos sonhos</h3>
+    </div>
+  <div id="words" class="col-md-8 row">
+    <div class = "word col-md-6" data-pesos="2,1,-1,-2">
+      <span>Reprovação</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="-1,2,2,1">
+      <span>Busca pela solução de problemas</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="-1,1,2,2">
+      <span>Liberdade individual</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="-1,-1,1,2">
+      <span>Brinquedos manuais</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="1,1,1,2">
+      <span>Desenvolvimento social</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="1,2,1,2">
+      <span>Trabalho em grupo</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="2,1,-1,-2">
+      <span>Professor detentor do conhecimento</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="-1,1,2,1">
+     <span>Projetos multidisciplinares</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="1,1,1,2">
+     <span>Habilidades artísticas</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="-1,-1,2,1">
+     <span>Turmas com idades variadas</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="-1,1,2,2">
+     <span>Respeito ao ritmo de aprendizado de cada aluno</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="2,1,-1,-2">
+     <span>Prova</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="2,1,-1,-2">
+     <span>Dever de casa</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="-1,-1,1,2">
+     <span>Respeito às aptidões</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="-1,1,2,2">
+     <span>Professor como orientador</span>
+    </div>
+    <div class = "word col-md-6" data-pesos="-1,2,2,2">
+     <span>Aluno ativo</span>
+    </div>
   </div>
-  <div class = "word col-md-4" data-pesos="-1,2,2,1">
-    Busca pela solução de problemas
-  </div>
-  <div class = "word col-md-4" data-pesos="-1,1,2,2">
-    Liberdade individual
-  </div>
-  <div class = "word col-md-4" data-pesos="-1,-1,1,2">
-    Brinquedos manuais
-  </div>
-  <div class = "word col-md-4" data-pesos="1,1,1,2">
-    Desenvolvimento social
-  </div>
-  <div class = "word col-md-4" data-pesos="1,2,1,2">
-    Trabalho em grupo
-  </div>
-  <div class = "word col-md-4" data-pesos="2,1,-1,-2">
-    Professor detentor do conhecimento
-  </div>
-  <div class = "word col-md-4" data-pesos="-1,1,2,1">
-   Projetos multidisciplinares
-  </div>
-  <div class = "word col-md-4" data-pesos="1,1,1,2">
-   Habilidades artísticas
-  </div>
-  <div class = "word col-md-4" data-pesos="-1,-1,2,1">
-   Turmas com idades variadas
-  </div>
-  <div class = "word col-md-4" data-pesos="-1,1,2,2">
-   Respeito ao ritmo de aprendizado de cada aluno
-  </div>
-  <div class = "word col-md-4" data-pesos="2,1,-1,-2">
-   Prova
-  </div>
-  <div class = "word col-md-4" data-pesos="2,1,-1,-2">
-   Dever de casa
-  </div>
-  <div class = "word col-md-4" data-pesos="-1,-1,1,2">
-   Respeito às aptidões
-  </div>
-  <div class = "word col-md-4" data-pesos="-1,1,2,2">
-   Professor como orientador
-  </div>
-  <div class = "word col-md-4" data-pesos="-1,2,2,2">
-   Aluno ativo
-  </div>
+  <div id = "school" class="col-md-4"></div>
 </div>
-<div id = "school" class="col-md-6" style = "margin:50px;height:400px;width:400px;border:1px solid black;padding:20px;">
-
-</div>
-    <script type="text/javascript" src="js/dragula.min.js"></script>
+<script type="text/javascript" src="js/dragula.min.js"></script>
 </body>
 
 <div id="tradicional" class="modal fade" role="dialog">
@@ -123,7 +133,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Escola tradicional</h4>
+        <h4 class="modal-title">Sua escola é : Escola Tradicional</h4>
       </div>
       <div class="modal-body">
         <p>O professor é a figura central, que  ensina as matérias e cobra a resposta dos alunos. Os conteúdos trabalhados em sala de aula geralmente são cobrados em avaliações. Essa linha educacional tem grande foco no conteúdo (dever de casa, provas, etc) e privilegia a preparação para o vestibular desde o início do currículo escolar. Seus defensores enfatizam que uma sólida base de informação é fundamental para formar alunos críticos e questionadores.</p>
@@ -140,7 +150,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Escola construtivista</h4>
+        <h4 class="modal-title">Sua escola é : Escola Construtivista</h4>
       </div>
       <div class="modal-body">
         <p>Na escola construtivista o saber não é transmitido apenas pelo professor, os estudantes são incentivados a serem independentes e pró-ativos no processo de aprendizagem e também constroem o próprio conhecimento, formulando hipóteses, perguntas e resolvendo problemas.
@@ -158,7 +168,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Escola montessoriana</h4>
+        <h4 class="modal-title">Sua escola é : Escola Montessoriana</h4>
       </div>
       <div class="modal-body">
         <p>Essa metodologia, criada pela educadora italiana Maria Montessori, prevê que o aluno utilize o conhecimento que já possui para assimilar novos conceitos. As atividades são sugeridas e orientadas pelo professor, que deixa que a própria criança se corrija para adquirir maior autoconfiança. Os alunos devem cumprir os módulos obrigatórios para avançar os estudos. Esse tipo de escola pode ter provas ou não.</p>
@@ -175,7 +185,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Escola Waldorf</h4>
+        <h4 class="modal-title">Sua escola é : Escola Waldorf</h4>
       </div>
       <div class="modal-body">
         <p>A pedagogia Waldorf prioriza o desenvolvimento físico, social e individual das crianças e estimula as atividades práticas, como marcenaria e culinária. É contra o uso da televisão e de brinquedos industrializados, prefere dar aos alunos pedaços de madeira para que eles os transformem em brinquedos. A trajetória do aluno é composta por ciclos de sete anos, nos quais cada criança tem um tutor. Geralmente as escolas Waldorf não aplicam provas.</p>

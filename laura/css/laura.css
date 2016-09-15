@@ -284,9 +284,65 @@ body {
   margin-bottom: 30px;
 }
 .word {
-  padding: 20px;
-  text-align: center;
+  padding: 19px 0px;
+  text-align: left;
   font-family: Lato, sans-serif;
   font-weight: 300;
   cursor: pointer;
+  font-size: 15px;
+}
+
+#words {
+  height: 500px;
+}
+
+.word span {
+      padding: 15px 40px;
+    /* border: 0px solid rgba(0,0,0,0.4); */
+    background: rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+
+.word span:hover {
+  padding: 20px 45px;
+  background-color: #eee;
+}
+
+#school {
+  background: url("../images/ilustra_escola.png");
+  background-size: cover;
+  min-height: 500px;
+}
+
+.word.selected span {
+  background: rgba(0,0,0,0.7);
+  color: #eee;
+}
+
+.modal-title {
+      font-family: Lato;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.modal-body {
+  line-height: 30px;
+    font-family: Lato;
+    font-weight: 300;
+}
+
+a.back-button {
+  position: fixed;
+    top: 10px;
+    left: 10px;
+    color: rgba(0,0,0,0.4);
+    font-family: lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+a.back-button:hover {
+  opacity: 0.5;
+  text-decoration: none;
 }
